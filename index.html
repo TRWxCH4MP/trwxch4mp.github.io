@@ -10,6 +10,11 @@
     	 		Credit Number:	<input type="text" name="creditNumber"> <br>
   			Exp: 		<input type="text" name="mounth" size="5"> <input type="text" name="year" size="5"><br>
 		</div><!-- /.container -->
-		<button type="button">Camera Scan!</button>
+		<button type="button" onclick="myFunction()">Camera Scan!</button>
+		<script>
+		function myFunction() {
+    		document.getElementById("field2").value = document.getElementById("field1").value;
+}
+</script>
 	</body>
 </html>
