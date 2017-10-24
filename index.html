@@ -1,27 +1,41 @@
 <!DOCTYPE html>
 <html>
-	<head>
-		<title>Mock Web View</title>
-	</head>
-	<body>
-		<nav>
-		</nav>
-		<div class="container">
-    	 		Credit Number:	<input type="text" name="creditNumber" id="creditNumber"> <br>
-  			Exp: 		<select name="mounth" id="mounth">
-  					<option>Mouth</option>
-					</select>
-					<select name="year" id="year">
-  					<option>Year</option>
-					</select><br>
-		</div><!-- /.container -->
-		<input type="button" onclick="location.href='ocr://openOCR';" value="Scan card" />
-		
-		<script type="text/javascript">
-    			function init(val){
-			// Do whatever you want with your parameter val
-    			}
-		</script>
-		
-	</body>
-</html>
+<head>
+    <title>JavaScript View</title>
+
+    <script type="text/javascript">
+
+        function showToast(){
+            var message = document.getElementById("message").value;
+            var lengthLong = document.getElementById("length").checked;
+
+            /* 
+                Call the 'makeToast' method in the Java code. 
+                'app' is specified in MainActivity.java when 
+                adding the JavaScript interface. 
+             */
+            app.makeToast(message, lengthLong);
+            return false;
+        }
+
+        /* 
+            Call the 'showToast' method when the form gets 
+            submitted (by pressing button or return key on keyboard). 
+         */
+        window.onload = function(){
+            var form = document.getElementById("form");
+            form.onsubmit = showToast;
+        }
+    </script>
+</head>
+
+<body>
+
+<form id="form">
+    Message: <input id="message" name="message" type="text"/><br />
+    Long: <input id="length" name="length" type="checkbox" /><br />
+
+    <input type="submit" value="Make Toast" />
+</form>
+
+</body>
