@@ -5,11 +5,12 @@
 <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
 </br>
-<button onclick="setTextField(value)">Scan card</button> 
+<button onclick="setTextField()">Scan card</button> 
 </center>
 <script>
-
-        function setTextField(value){
+        
+        function setTextField(){
+        var value = Android.getValue();
         document.getElementById("creditNumber").value = value;
         }
 
