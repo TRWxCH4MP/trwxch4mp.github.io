@@ -16,21 +16,22 @@
 <script>
         
         function setTextField(){
-                Android.getFromAndroid();
-//         var value = Android.getFromAndroid();
-//         document.getElementById("creditNumber").value = value;
+        Android.getFromAndroid();
+                
+        var value = Android.getCardNumber();
+        document.getElementById("creditNumber").value = value;
           
-//         var option = document.createElement("option");
-//         option.text = Android.getMonth();
-//         option.value = Android.getMonth();
-//         var select = document.getElementById("selectMonth");
-//         select.appendChild(option);
+        var option = document.createElement("option");
+        option.text = Android.getExpiryMonth();
+        option.value = Android.getExpiryMonth();
+        var select = document.getElementById("selectMonth");
+        select.appendChild(option);
 
-//         var option = document.createElement("option");
-//         option.text = Android.getYear();
-//         option.value = Android.getYear();
-//         var select = document.getElementById("selectYear");
-//         select.appendChild(option);
+        var option = document.createElement("option");
+        option.text = Android.getExpiryYear();
+        option.value = Android.getExpiryYear();
+        var select = document.getElementById("selectYear");
+        select.appendChild(option);
   
         }
 
