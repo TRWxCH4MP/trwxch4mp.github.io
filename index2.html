@@ -4,11 +4,11 @@
 <center>
 <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
-<select>
-  <option value="mouth">Month</option>
+<select id="selectMonth">
+
 </select>
-<select>
-  <option value="year">Year</option>
+<select id="selectYear">
+
 </select>
 </br>
 <button onclick="setTextField()">Scan card</button> 
@@ -18,6 +18,19 @@
         function setTextField(){
         var value = Android.getFromAndroid();
         document.getElementById("creditNumber").value = value;
+          
+        var option = document.createElement("option");
+        option.text = Android.getMonth();
+        option.value = Android.getMonth();
+        var select = document.getElementById("selectMonth");
+        select.appendChild(option);
+
+        var option = document.createElement("option");
+        option.text = Android.getYear();
+        option.value = Android.getYear();
+        var select = document.getElementById("selectYear");
+        select.appendChild(option);
+  
         }
 
         </script>
