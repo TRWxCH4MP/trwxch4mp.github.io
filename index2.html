@@ -37,13 +37,13 @@
                 var expiryMonth;
                 var expiryYear;
                 
-                if (expMonth == 0) {
+                if (expMonth == 0 || expMonth == null) {
                         expiryMonth = 00;
                 } else {
                         expiryMonth = expMonth;      
                 }
                 
-                if (expYear == 0) {
+                if (expYear == 0 || expYear == null) {
                         expiryYear = 00;               
                 } else {
                         expiryYear = expYear;       
