@@ -4,11 +4,9 @@
     <title>JavaScript View</title>
 
     <script type="text/javascript">
-
         function showToast(){
 //             var message = document.getElementById("message").value;
 //             var lengthLong = document.getElementById("length").checked;
-
             /* 
                 Call the 'makeToast' method in the Java code. 
                 'app' is specified in MainActivity.java when 
@@ -18,7 +16,7 @@
             app.ScanCard();
             return false;
         }
-
+        
         /* 
             Call the 'showToast' method when the form gets 
             submitted (by pressing button or return key on keyboard). 
@@ -31,13 +29,18 @@
 </head>
 
 <body>
-
 <form id="form">
-    Message: <input id="message" name="message" type="text"/><br />
-    Long: <input id="length" name="length" type="checkbox" /><br />
-
-    <input type="submit" value="Make Toast" />
+<center>
+<input type="text" id="creditNumber" > </br>
+<select>
+  <option value="mouth">Month</option>
+</select>
+<select>
+  <option value="year">Year</option>
+</select>
+</br>
+ <input type="submit" value="Scan card" />
 </form>
-
+</center>
 </body>
 </html>
