@@ -1,6 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
+<form id="form">
 <center>
 <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
@@ -15,8 +16,18 @@
 </center>
 <script>
         
+//         window.onload = function(){
+//             var form = document.getElementById("form");
+//             form.onsubmit = showToast;
+//         }
+        
+//         function showToast(){
+//                 Android.showToast();
+//                 return false;
+//         }
+        
         function setTextField(){
-        Android.getFromAndroid();
+        Android.getScanCard();
                 
         var value = Android.getCardNumber();
         document.getElementById("creditNumber").value = value;
@@ -36,6 +47,6 @@
         }
 
         </script>
-
+</form>
 </body>
 </html>
