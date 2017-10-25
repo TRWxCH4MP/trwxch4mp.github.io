@@ -50,36 +50,11 @@
 //                 select.appendChild(option);
         }
         
-        function getExpiryYear() {
-                var option = document.createElement("option");
-                option.text = Android.getExpiryYear();
-                option.value = Android.getExpiryYear();
-                var select = document.getElementById("selectYear");
-                select.appendChild(option);         
-        }
-        
+
         
         function scanCard() {
         Android.getScanCard();
         }
-        
-        function myFunction() {
-                var value = "Hello";
-                document.getElementById("creditNumber").value = value;
-        }
-        
-//         var option = document.createElement("option");
-//         option.text = Android.getExpiryMonth();
-//         option.value = Android.getExpiryMonth();
-//         var select = document.getElementById("selectMonth");
-//         select.appendChild(option);
-
-//         var option = document.createElement("option");
-//         option.text = Android.getExpiryYear();
-//         option.value = Android.getExpiryYear();
-//         var select = document.getElementById("selectYear");
-//         select.appendChild(option);
-  
 
         </script>
 <!-- </form> -->
