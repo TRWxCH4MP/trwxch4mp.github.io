@@ -34,8 +34,20 @@
         function setTextField(expMonth, expYear) {
 //                 var Text = card;
 //                 var cardNumber = card;
-                var expiryMonth = expMonth;
-                var expiryYear = expYear;
+                var expiryMonth;
+                var expiryYear;
+                
+                if (expMonth == 0) {
+                        expiryMonth = 00;
+                } else {
+                        expiryMonth = expMonth;      
+                }
+                
+                if (expYear == 0) {
+                        expiryYear = 00;               
+                } else {
+                        expiryYear = expYear;       
+                }
                 
                 Android.showToast();
                 
