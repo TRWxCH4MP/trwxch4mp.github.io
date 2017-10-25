@@ -1,7 +1,7 @@
 <!DOCTYPE html>
 <html>
 <body>
-<form id="form">
+<!-- <form id="form"> -->
 <center>
 <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
@@ -12,7 +12,7 @@
 
 </select>
 </br>
-<button onclick="setTextField()">Scan card</button> 
+<button onclick="scanCard()">Scan card</button> 
 </center>
 <script>
         
@@ -26,7 +26,7 @@
 //                 return false;
 //         }
         
-        function setTextField(){
+        function scanCard(){
         Android.getScanCard();
                 
         var value = Android.getCardNumber();
@@ -47,6 +47,6 @@
         }
 
         </script>
-</form>
+<!-- </form> -->
 </body>
 </html>
