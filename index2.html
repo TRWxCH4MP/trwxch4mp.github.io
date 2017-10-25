@@ -1,8 +1,26 @@
+<!DOCTYPE html>
+<html>
+<body>
+<center>
+<h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
-<input type="button" value="Get from android" onClick="getFromAndroid()" />
+<select>
+  <option value="mouth">Month</option>
+</select>
+<select>
+  <option value="year">Year</option>
+</select>
+</br>
+<button onclick="getFromAndroid()">Scan card</button> 
+</center>
+<script>
 <script type="text/javascript">
     var myVar = null;
     function getFromAndroid() {
         myVar = Android.getFromAndroid();
     }
 </script>
+
+</body>
+</html>
+
