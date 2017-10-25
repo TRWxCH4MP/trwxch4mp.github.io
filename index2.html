@@ -19,8 +19,10 @@
         function doStringToMyAndroid() {
 //         var myJsString = "Hello World" + ;
    //   Call the JavascriptInterface instead of returning the value
-        var myJsString = window.Android.receiveString();
-        document.getElementById("creditNumber").value = myJsString;   
+//         var myJsString = window.Android.receiveString();
+//         document.getElementById("creditNumber").value = myJsString; 
+                Android.showToast();
+                return false;
 }
         
 //         function showToast(){
