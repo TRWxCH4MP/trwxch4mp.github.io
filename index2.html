@@ -30,10 +30,11 @@
 //                 return false;
 //         }
         
-        function getExpiryMonth() {
+        function getExpiryMonth(expMonth) {
+                var expiryMonth = expMonth;
                 var option = document.createElement("option");
-                option.text = Android.getExpiryMonth();
-                option.value = Android.getExpiryMonth();
+                option.text = expiryMonth;
+                option.value = expiryMonth;
                 var select = document.getElementById("selectMonth");
                 select.appendChild(option);         
         }
