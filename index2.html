@@ -5,13 +5,14 @@
 <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
 </br>
-<button onclick="getFromAndroid()">Scan card</button> 
+<button onclick="setTextField(value)">Scan card</button> 
 </center>
-<script type="text/javascript">
-    var myVar = null;
-    function getFromAndroid() {
-        myVar = Android.getFromAndroid();
-    }
+<script>
+
+        function setTextField(value){
+        document.getElementById("texta").value = value;
+        }
+
 </script>
 
 </body>
