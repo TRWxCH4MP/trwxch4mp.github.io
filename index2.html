@@ -31,11 +31,18 @@
 //                 return false;
 //         }
         
-        function setTextField(expMonth, expYear) {
-//                 var Text = card;
-//                 var cardNumber = card;
+        function setTextField(card, expMonth, expYear) {
+                var cardNumber;
                 var expiryMonth;
                 var expiryYear;
+                
+                alert(card);
+                
+                if (card == 0 || card == null) {
+                        cardNumber = "0000-0000-0000-000"       
+                } else {
+                        cardNumber = card;
+                }
                 
                 if (expMonth == 0 || expMonth == null) {
                         expiryMonth = "00";
