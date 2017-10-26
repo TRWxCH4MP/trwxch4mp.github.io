@@ -31,31 +31,31 @@
 //                 return false;
 //         }
         
-        function setTextField(expMonth) {
+        function setTextField(card) {
                 var cardNumber;
                 var expiryMonth;
                 var expiryYear;
                
-//                 if (card == 0 || card == null) {
-//                         cardNumber = "0000-0000-0000-000"              
-//                         alert(cardNumber);
-//                 } else {
-//                         cardNumber = card;
-//                         alert(cardNumber)
-//                 }
-                
-                
-                if (expMonth == 0 || expMonth == null) {
-                        expiryMonth = "00";
-                        alert("Null");
+                if (card == 0 || card == null) {
+                        cardNumber = "0000-0000-0000-000"              
+                        alert(cardNumber);
                 } else {
-                        expiryMonth = expMonth;  
-                        alert(expiryMonth)
+                        cardNumber = card;
+                        alert(cardNumber)
                 }
+                
+                
+//                 if (expMonth == 0 || expMonth == null) {
+//                         expiryMonth = "00";
+//                         alert("Null");
+//                 } else {
+//                         expiryMonth = expMonth;  
+//                         alert(expiryMonth)
+//                 }
                 
 //                 if (expYear == 0 || expYear == null) {
 //                         expiryYear = "00";
-// //                         alert("Null");
+//                         alert("Null");
 //                 } else {
 //                         expiryYear = expYear;       
 //                 }
@@ -65,7 +65,7 @@
                 
 //                 document.getElementById("text").value = "Hello world";
 //                 $('#text').val('Hello World');
-                document.getElementById("creditNumber").value = expiryMonth;
+//                 document.getElementById("creditNumber").value = expiryMonth;
                 
 //                 var option = document.createElement("option");
 //                 option.text = expiryMonth;
