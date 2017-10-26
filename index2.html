@@ -3,8 +3,7 @@
 <body>
 <!-- <form id="form"> -->
 <center>
-<h3>Mock WebView</h3>
-<p id="text"></p>
+        <h3>Mock WebView</h3>
 <input type="text" id="creditNumber" > </br>
 <select id="selectMonth">
 
@@ -17,54 +16,11 @@
 </center>
 <script>
         
-        function doStringToMyAndroid() {
-//         var myJsString = "Hello World" + ;
-   //   Call the JavascriptInterface instead of returning the value
-        var myJsString = window.Android.getCardNumber();
-        document.getElementById("creditNumber").value = myJsString; 
-//                 Android.showToast();
-//                 return false;
-}
-        
-//         function showToast(){
-//                 Android.showToast();
-//                 return false;
-//         }
-        
-        function setTextField(card, expMonth, expYear) {
-                var cardNumber;
-                var expiryMonth;
-                var expiryYear;
-               
-                if (card == 0 || card == null) {
-                        cardNumber = "0000-0000-0000-000"              
-                        alert(cardNumber);
-                } else {
-                        cardNumber = card;
-                        alert(cardNumber)
-                }
+        function setTextField(cardNumber, expMonth, expYear) {
+                var cardNumber = cardNumber;
+                var expiryMonth = expMonth;
+                var expiryYear = expYear;
                 
-                
-                if (expMonth == 0 || expMonth == null) {
-                        expiryMonth = "00";
-                        alert("Null");
-                } else {
-                        expiryMonth = expMonth;  
-                        alert(expiryMonth)
-                }
-                
-                if (expYear == 0 || expYear == null) {
-                        expiryYear = "00";
-                        alert("Null");
-                } else {
-                        expiryYear = expYear;       
-                }
-                
-                Android.showToast();
-                
-                
-//                 document.getElementById("text").value = "Hello world";
-//                 $('#text').val('Hello World');
                 document.getElementById("creditNumber").value = cardNumber;
                 
                 var option = document.createElement("option");
