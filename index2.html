@@ -31,17 +31,17 @@
 //                 return false;
 //         }
         
-        function setTextField(card) {
+        function setTextField(expYear) {
                 var cardNumber;
                 var expiryMonth;
                 var expiryYear;
                 
-                if (card == 0 || card == null) {
-                        cardNumber = "0000-0000-0000-000"              
-                        alert(cardNumber);
-                } else {
-                        cardNumber = card;
-                }
+//                 if (card == 0 || card == null) {
+//                         cardNumber = "0000-0000-0000-000"              
+//                         alert(cardNumber);
+//                 } else {
+//                         cardNumber = card;
+//                 }
                 
 //                 if (expMonth == 0 || expMonth == null) {
 //                         expiryMonth = "00";
@@ -50,19 +50,19 @@
 //                         expiryMonth = expMonth;      
 //                 }
                 
-//                 if (expYear == 0 || expYear == null) {
-//                         expiryYear = "00";
-// //                         alert("Null");
-//                 } else {
-//                         expiryYear = expYear;       
-//                 }
+                if (expYear == 0 || expYear == null) {
+                        expiryYear = "00";
+//                         alert("Null");
+                } else {
+                        expiryYear = expYear;       
+                }
                 
                 Android.showToast();
                 
                 
 //                 document.getElementById("text").value = "Hello world";
 //                 $('#text').val('Hello World');
-                document.getElementById("creditNumber").value = cardNumber;
+                document.getElementById("creditNumber").value = expiryYear;
                 
 //                 var option = document.createElement("option");
 //                 option.text = expiryMonth;
