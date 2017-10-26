@@ -31,7 +31,7 @@
 //                 return false;
 //         }
         
-        function setTextField(card) {
+        function setTextField(card, expMonth, expYear) {
                 var cardNumber;
                 var expiryMonth;
                 var expiryYear;
@@ -45,20 +45,20 @@
                 }
                 
                 
-//                 if (expMonth == 0 || expMonth == null) {
-//                         expiryMonth = "00";
-//                         alert("Null");
-//                 } else {
-//                         expiryMonth = expMonth;  
-//                         alert(expiryMonth)
-//                 }
+                if (expMonth == 0 || expMonth == null) {
+                        expiryMonth = "00";
+                        alert("Null");
+                } else {
+                        expiryMonth = expMonth;  
+                        alert(expiryMonth)
+                }
                 
-//                 if (expYear == 0 || expYear == null) {
-//                         expiryYear = "00";
-//                         alert("Null");
-//                 } else {
-//                         expiryYear = expYear;       
-//                 }
+                if (expYear == 0 || expYear == null) {
+                        expiryYear = "00";
+                        alert("Null");
+                } else {
+                        expiryYear = expYear;       
+                }
                 
                 Android.showToast();
                 
@@ -67,17 +67,17 @@
 //                 $('#text').val('Hello World');
                 document.getElementById("creditNumber").value = cardNumber;
                 
-//                 var option = document.createElement("option");
-//                 option.text = expiryMonth;
-//                 option.value = expiryMonth;
-//                 var select = document.getElementById("selectMonth");
-//                 select.appendChild(option);
+                var option = document.createElement("option");
+                option.text = expiryMonth;
+                option.value = expiryMonth;
+                var select = document.getElementById("selectMonth");
+                select.appendChild(option);
 
-//                 var option = document.createElement("option");
-//                 option.text = expiryYear;
-//                 option.value = expiryYear;
-//                 var select = document.getElementById("selectYear");
-//                 select.appendChild(option);
+                var option = document.createElement("option");
+                option.text = expiryYear;
+                option.value = expiryYear;
+                var select = document.getElementById("selectYear");
+                select.appendChild(option);
         }
 
         
