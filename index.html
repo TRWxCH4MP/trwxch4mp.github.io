@@ -1,46 +1,24 @@
 <!DOCTYPE html>
 <html>
-<head>
-    <title>Mock Web View</title>
-
-    <script type="text/javascript">
-        function scanCard(){
-//             var message = document.getElementById("message").value;
-//             var lengthLong = document.getElementById("length").checked;
-            /* 
-                Call the 'makeToast' method in the Java code. 
-                'app' is specified in MainActivity.java when 
-                adding the JavaScript interface. 
-             */
-//             app.makeToast(message, lengthLong);
-            app.scanCard();
-            return false;
+<body>
+<!-- <form id="form"> -->
+<center>
+        <h3>JavaScript in WebView</h3>
+<input type="text" id="textBox" ></br>
+<button onclick="showMessage()">Show Message</button> 
+</center>
+<script>
+        
+        function setTextField(text) {
+                var text = text;
+                
+                document.getElementById("textBox").value = text;
         }
         
-        /* 
-            Call the 'showToast' method when the form gets 
-            submitted (by pressing button or return key on keyboard). 
-         */
-        window.onload = function(){
-            var form = document.getElementById("form");
-            form.onsubmit = scanCard;
+        function showMessage() {
+        Android.showMessage();
         }
-    </script>
-</head>
-
-<body>
-<form id="form">
-<center>
-<input type="text" id="creditNumber" > </br>
-<select>
-  <option value="mouth">Month</option>
-</select>
-<select>
-  <option value="year">Year</option>
-</select>
-</br>
- <input type="submit" value="Scan card" />
-</form>
-</center>
+        </script>
+<!-- </form> -->
 </body>
 </html>
